@@ -57,13 +57,54 @@ namespace AuthService.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<LoginResponseDto>> Login([FromBody] LoginDto loginDto)
         {
-            return Ok();
+             try
+            {
+                var token = await _authService.AuthenticateAsync(loginDto.Username, loginDto.Password);
+                if (token == null)
+                {
+                    return Unauthorized(new { Message = "Invalid username or password" });
+                }
+
+                var user = await _authService.GetUserByUsernameAsync(loginDto.Username);
+                if (user == null)
+                {
+                    return Unauthorized();
+                }
+
+                var response = new LoginResponseDto
+                {
+                    Token = token,
+                    UserId = user.UserId,
+                    Username = user.Username,
+                    Email = user.Email,
+                    Role = user.Role,
+                    ExpiresAt = DateTime.UtcNow.AddHours(24)
+                };
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error during login");
+                return StatusCode(500, "An error occurred during login");
+            }
         }
          [HttpGet("validate")]
         [Authorize]
         public ActionResult ValidateToken()
         {
-            return Ok();
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+            var username = User.FindFirst(System.Security.Claims.ClaimTypes.Name)?.Value;
+            var role = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;
+
+            return Ok(new
+            {
+                UserId = userId,
+                Username = username,
+                Role = role,
+                Message = "Token is valid"
+            });
+        
         }
         
     }

@@ -264,3 +264,4 @@ C:\Users\Administrator\Desktop\MicroService Nov26\Services\AuthService\obj\Debug
 C:\Users\Administrator\Desktop\MicroService Nov26\Services\AuthService\obj\Debug\net9.0\AuthService.pdb
 C:\Users\Administrator\Desktop\MicroService Nov26\Services\AuthService\obj\Debug\net9.0\AuthService.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\MicroService Nov26\Services\AuthService\obj\Debug\net9.0\ref\AuthService.dll
+C:\Users\Administrator\Desktop\MicroService Nov26\Services\AuthService\obj\Debug\net9.0\AuthService.sourcelink.json
