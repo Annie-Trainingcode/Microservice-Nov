@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\AuthService\\AuthService.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\AuthService\\AuthService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\AuthService\\AuthService.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\AuthService\\AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\AuthService\\AuthService.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\AuthService\\AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\AuthService\\AuthService.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\AuthService\\AuthService.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\AuthService\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

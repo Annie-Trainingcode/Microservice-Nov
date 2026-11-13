@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\DriverService\\DriverService.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\DriverService\\DriverService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\DriverService\\DriverService.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\DriverService\\DriverService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\DriverService\\DriverService.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\DriverService\\DriverService.csproj",
         "projectName": "DriverService",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\DriverService\\DriverService.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\DriverService\\DriverService.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\MicroService Nov26\\Services\\DriverService\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MicroServiceNov26\\Services\\DriverService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,9 +50,29 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
