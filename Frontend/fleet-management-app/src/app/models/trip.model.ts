@@ -18,6 +18,7 @@ export interface Trip {
 export interface CreateTripRequest {
   vehicleID: string;
   driverID: string;
+  endLocation:string;
   startLocation: string;
 }
 
